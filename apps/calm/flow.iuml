@@ -1,0 +1,52 @@
+@startuml
+
+title Calm App Rating Recipe\n[[https://ratingrecipes.com/apps/calm]]
+
+start
+
+:User favorites item on any of
+the following screens
+* Program
+* Video player
+* End of session
+* Profile history;
+:Is the rating screen **currently displayed**?
+# Have we **shown a rating screen** twice?
+# Have we shown a rating screen for this **app version**?
+# Pick a **random number** between 1 and 10. Is it between 4 and 10?;
+
+if (Is in-app rating enabled?) then (yes)
+    if (In-app rating flow) then (success)
+        :GOTO Add 1 to...;
+        stop
+    else (failure)
+        :GOTO Custom prompt flow;
+        stop
+    endif
+else (no)
+    :Custom prompt flow;
+        if (Do you live this\napp? prompt) then (yes)
+            switch (Rate this app prompt)
+            case (later)
+                :Add 1 to # of
+                rating screens
+                displayed;
+                end
+            case (ok)
+                :User re-directed to
+                Google Play Calm
+                page to review
+                app;
+                end
+            case (dismiss)
+                :Set rating screen
+                displayed to false;
+                end
+            endswitch
+        else (no)
+            :Feedback form;
+            end
+        endif
+endif
+
+@enduml
