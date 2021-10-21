@@ -13,4 +13,4 @@ Subscribe to the Newsletter:
 Example:
 Calm App
 
-![Image of recipe](https://growingcreators.carrd.co/assets/images/image02.jpg?v=2bb6ba5a)
+![Image of recipe](https://drive.google.com/file/d/16mP6KZpPDcSDlZXcBDdKrPeFJPJxakYO/view)
