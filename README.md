@@ -1,16 +1,16 @@
 # Rating Recipes
 
-Find Rating Recipes
+Find The Best Rating Recipes. 
 
 Delivered to your Inbox. Every Week.
 
-INSERT EMAIL NEWSLETTER BUTTON
+Subscribe to the Newsletter:
 
-Topics:
-Rating Topics
+<table border="1"><tbody><tr>
+<td width="100%">https://www.getrevue.co/profile/ratingrecipes</td>
+<td></td></tr></tbody></table>
 
-Recipes:
-Calm
-Headspace
+Example:
+Calm App
 
 ![Image of recipe](https://growingcreators.carrd.co/assets/images/image02.jpg?v=2bb6ba5a)
