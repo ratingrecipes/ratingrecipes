@@ -5,7 +5,9 @@
 
 **Genre** Meditation
 
-**Icon** <img src='https://play-lh.googleusercontent.com/S76GphUu2pZa249td2Bb4XAhLcPRrFdL1zp_5qU1ouukvRq9r0-8jJ-CruaTtdT6g84=s180-rw' width='10%'>
+**Icon** 
+
+<img src='https://play-lh.googleusercontent.com/S76GphUu2pZa249td2Bb4XAhLcPRrFdL1zp_5qU1ouukvRq9r0-8jJ-CruaTtdT6g84=s180-rw' width='10%'>
 
 **Links** [Apple](https://apps.apple.com/us/app/calm-sleep-meditation/id571800810)/[Android](https://play.google.com/store/apps/details?id=com.calm.android)
 
