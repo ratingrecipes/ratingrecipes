@@ -14,3 +14,8 @@ Example:
 Calm App
 
 ![Image of recipe](https://drive.google.com/file/d/16mP6KZpPDcSDlZXcBDdKrPeFJPJxakYO/view)
+
+<table><tbody><tr><td><p align="center">
+<img src="https://drive.google.com/open?id=16mP6KZpPDcSDlZXcBDdKrPeFJPJxakYO&authuser=thomas.schultz.wenk%40gmail.com&usp=drive_fs"></p>
+<p align="center"><sub>Calm App Rating Flow</sub></p>
+</td></tr></tbody></table>
