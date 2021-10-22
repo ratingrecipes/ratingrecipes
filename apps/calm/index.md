@@ -1,21 +1,16 @@
 # Calm Rating Recipe
 
-[Subscribe to Receive New Recipes](https://www.getrevue.co/profile/ratingrecipes)
-
-[Recent Recipes](https://ratingrecipes.com)
-
 ## About
-**Name** Calm
-
-**Genre** Meditation
-
-**Icon** 
 
 <img src='https://play-lh.googleusercontent.com/S76GphUu2pZa249td2Bb4XAhLcPRrFdL1zp_5qU1ouukvRq9r0-8jJ-CruaTtdT6g84=s180-rw' width='10%'>
 
+Calm
+
+**Genre** Meditation
+
 **Links** [Apple](https://apps.apple.com/us/app/calm-sleep-meditation/id571800810)/[Android](https://play.google.com/store/apps/details?id=com.calm.android)
 
-**Similar Apps** Headspace
+**Similar Apps** [Headspace](https://ratingrecipes.com/apps/headspace)
 
 **Recipe Type** Button Trigger
 
@@ -65,3 +60,9 @@ has rated current version
 ```
 is in-app rating enabled
 ```
+
+### More recipes
+
+[Subscribe to receive new recipes each week](https://www.getrevue.co/profile/ratingrecipes)
+
+[Recent recipes](https://ratingrecipes.com)

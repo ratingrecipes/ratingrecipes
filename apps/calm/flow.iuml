@@ -11,9 +11,9 @@ the following screens
 * End of session
 * Profile history;
 :Is the rating screen **currently displayed**?
-# Have we **shown a rating screen** twice?
-# Have we shown a rating screen for this **app version**?
-# Pick a **random number** between 1 and 10. Is it between 4 and 10?;
+# Have we **shown a rating screen** less than twice?
+# Have we not shown a rating screen for this **app version**?
+# Pick a **random number** between 1 and 10. Is it between 1 and 3?;
 
 if (Is in-app rating enabled?) then (yes)
     if (In-app rating flow) then (success)
