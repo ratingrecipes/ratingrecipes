@@ -1,5 +1,9 @@
 # Calm Rating Recipe
 
+[Subscribe to Receive New Recipes](https://www.getrevue.co/profile/ratingrecipes)
+
+[Recent Recipes](https://ratingrecipes.com)
+
 ## About
 **Name** Calm
 
