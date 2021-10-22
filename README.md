@@ -4,7 +4,7 @@ Delivered to your Inbox. Every Week.
 
 ## [Subscribe to Receive New Recipes](https://www.getrevue.co/profile/ratingrecipes)
 
-### Recent Recipes
+Recent Recipes:
 
 [Calm](https://ratingrecipes.com/apps/calm/)
 
