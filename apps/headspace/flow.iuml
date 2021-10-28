@@ -1,0 +1,23 @@
+@startuml
+
+title Headspace App Rating Recipe\n[[https://ratingrecipes.com/apps/headspace]]
+
+start
+
+:User completes a meditation;
+if (Is the feedback loop enabled?) then (yes)
+    :Machine learning feedback loop
+    is a custom machine learning system.
+    Ues multi-screen surveys and
+    recommendations to learn from users.;
+    end
+else (no)
+    :Has the user meditated for **more than 20 minutes**?
+    Have we previously **shown a rating screen**?
+    Is the **in-app rating feature** enabled?;
+    :In-app rating flow;
+    :Set rating screen shown to true;
+    end
+endif
+
+@enduml
