@@ -1,4 +1,4 @@
-# Calm Rating Recipe
+# Headspace Rating Recipe
 
 ## About
 
