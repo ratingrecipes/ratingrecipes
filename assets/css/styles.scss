@@ -1,8 +1,6 @@
 ---
 ---
 
-@import "{{ site.theme }}";
-
 #header_wrap {
     background: #00597f;
 }
@@ -14,3 +12,5 @@
 #footer_wrap {
     background: #00597f;
 }
+
+@import "{{ site.theme }}";
