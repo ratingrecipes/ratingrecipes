@@ -52,6 +52,6 @@ is in-app rating enabled
 
 ### More recipes
 
-[Subscribe to receive new recipes each week](https://www.getrevue.co/profile/ratingrecipes)
+[Subscribe to receive new recipes each week](https://newsletter.ratingrecipes.com/)
 
 [Recent recipes](https://ratingrecipes.com)

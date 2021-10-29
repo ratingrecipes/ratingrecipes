@@ -1,8 +1,8 @@
 Find The Best Rating Recipes. 
 
-Delivered to your Inbox. Every Week.
 
-**[Subscribe to Receive New Recipes](https://www.getrevue.co/profile/ratingrecipes)**
+
+**[Subscribe to Receive New Recipes](https://newsletter.ratingrecipes.com/)**. Delivered to your Inbox. Every Week.
 
 Recent Recipes:
 
