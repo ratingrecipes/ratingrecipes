@@ -1,0 +1,17 @@
+@startuml
+
+title DoorDash App Rating Recipe\n[[https://ratingrecipes.com/apps/doordash]]
+
+start
+
+:User places an order;
+if (Have we shown a rating screen within the last 56 days?) then (yes)
+    :In-app rating flow;
+    :Set user last prompted timestamp to now;
+    end
+else (no)
+    :ignore;
+    end
+endif
+
+@enduml
