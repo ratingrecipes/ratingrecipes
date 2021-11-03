@@ -10,7 +10,7 @@ if (Have we shown a rating screen within the last 56 days?) then (yes)
     :Set user last prompted timestamp to now;
     end
 else (no)
-    :ignore;
+    :Do nothing;
     end
 endif
 
