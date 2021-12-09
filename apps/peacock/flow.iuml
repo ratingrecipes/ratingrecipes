@@ -1,0 +1,19 @@
+@startuml
+
+title Peacock TV App Rating Recipe\n[[https://ratingrecipes.com/apps/peacock]]
+
+start
+
+:User selects TV show or movie from "Continue Watching" category;
+:User watches video;
+:User returns to home screen;
+if (User returned to home screen after viewing a "Continue Watching" video) then (yes)
+    :In-app rating flow;
+    :Set in-app review requested flag;
+    end
+else (no)
+    :Do nothing;
+    end
+endif
+
+@enduml
