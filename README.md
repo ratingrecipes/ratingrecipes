@@ -12,7 +12,7 @@ Find The Best Rating Recipes.
 | [DoorDash](https://ratingrecipes.com/apps/doordash/)   | Yes                   |
 | [Headspace](https://ratingrecipes.com/apps/headspace/) | Yes                   |
 | [Peacock TV](https://ratingrecipes.com/apps/peacock/)  | Yes                   |
-| Affirm                                                 | Yes                   |
+| Affirm                                                 | No                   |
 | Alexa                                                  | Yes                   |
 | Amazon                                                 | Yes                   |
 | Bigo Live                                              | No                    |
