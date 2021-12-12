@@ -24,7 +24,7 @@ Find The Best Rating Recipes.
 | Direct Express                                         | No                    |
 | Discord                                                | No                    |
 | Disney                                                 | Yes                   |
-| Duolingo                                               | Yes                   |
+| Duolingo                                               | No                    |
 | Etsy                                                   | Yes                   |
 | Google Play                                            | Yes                   |
 | HBO Max                                                | No                    |
