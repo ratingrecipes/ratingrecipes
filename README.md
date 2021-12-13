@@ -11,8 +11,9 @@ Find The Best Rating Recipes.
 | [Calm](https://ratingrecipes.com/apps/calm/)           | Yes                   |
 | [DoorDash](https://ratingrecipes.com/apps/doordash/)   | Yes                   |
 | [Headspace](https://ratingrecipes.com/apps/headspace/) | Yes                   |
+| [Hulu](https://ratingrecipes.com/apps/hulu/)           | Yes                   |
 | [Peacock TV](https://ratingrecipes.com/apps/peacock/)  | Yes                   |
-| Affirm                                                 | No                   |
+| Affirm                                                 | No                    |
 | Alexa                                                  | Yes                   |
 | Amazon                                                 | Yes                   |
 | Bigo Live                                              | No                    |
@@ -29,7 +30,6 @@ Find The Best Rating Recipes.
 | Google Play                                            | Yes                   |
 | HBO Max                                                | No                    |
 | Hopper                                                 | No                    |
-| Hulu                                                   | Yes                   |
 | Instagram                                              | Yes                   |
 | JustPlay                                               | Yes                   |
 | Magic Tool                                             | No                    |

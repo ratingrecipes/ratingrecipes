@@ -1,0 +1,22 @@
+@startuml
+
+title Hulu App Rating Recipe\n[[https://ratingrecipes.com/apps/hulu]]
+
+start
+
+:User watches video;
+:User exits player screen;
+if (In-app rating feature enabled) then (yes)
+    if (Is in-app rating debug flag enabled) then (yes)
+        :Show in-app rating with 5 seconds of error-free video;
+        end
+    else (no)
+        :Show in-app rating with 30 minutes of error-free video;
+        end
+    endif
+else (no)
+    end
+endif
+
+
+@enduml

@@ -10,7 +10,7 @@ Peacock TV
 
 **Links** [Apple](https://apps.apple.com/us/app/peacock-tv-stream-tv-movies/id1508186374)/[Android](https://play.google.com/store/apps/details?id=com.peacocktv.peacockandroid)
 
-**Similar Apps** Netflix
+**Similar Apps** [Hulu](https://ratingrecipes.com/apps/hulu)
 
 **Recipe Type** Returning User Trigger
 
