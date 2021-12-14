@@ -1,0 +1,28 @@
+@startuml
+
+title Etsy App Rating Recipe\n[[https://ratingrecipes.com/apps/etsy]]
+
+start
+
+:User completes purchase;
+:GOTO elgibility flow;
+end
+
+:User reviews purchase once package arrives;
+if (Is purchase review 5-stars?) then (yes)
+    :GOTO elgibility flow;
+    end
+else (no)
+    end
+endif
+
+:In-app rating elgibility flow;
+if (Has user seen in-app rating within 30 days?) then (yes)
+    end
+else (no)
+    :Show in-app rating;
+    :Record rating date;
+    end
+endif
+
+@enduml
