@@ -10,7 +10,7 @@ Find The Best Rating Recipes.
 |:------------------------------------------------------:|-----------------------|
 | [Calm](https://ratingrecipes.com/apps/calm/)           | Yes                   |
 | [DoorDash](https://ratingrecipes.com/apps/doordash/)   | Yes                   |
-| [Etsy](https://ratingrecipes.com/apps/etsy          /) | Yes                   |
+| [Etsy](https://ratingrecipes.com/apps/etsy/)           | Yes                   |
 | [Headspace](https://ratingrecipes.com/apps/headspace/) | Yes                   |
 | [Hulu](https://ratingrecipes.com/apps/hulu/)           | Yes                   |
 | [Peacock TV](https://ratingrecipes.com/apps/peacock/)  | Yes                   |
