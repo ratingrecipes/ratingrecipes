@@ -25,7 +25,7 @@ Show the in-app rating after reviewing a purchase with 5-stars.
 ## Screenshots
 <p align="center">
 <img src='https://user-images.githubusercontent.com/140911/146044041-734ff283-190f-4761-a3e9-124f8f89591e.jpg' width='45%'>
-<img src='https://user-images.githubusercontent.com/140911/146044302-94c4b783-54d3-4559-8772-3402584537bc.jpg width='45%'>
+<img src='https://user-images.githubusercontent.com/140911/146044302-94c4b783-54d3-4559-8772-3402584537bc.jpg' width='45%'>
 </p>
 
 ## Rating Flow
