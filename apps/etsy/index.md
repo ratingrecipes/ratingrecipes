@@ -19,7 +19,8 @@ Etsy
 **Recipe Date** December 2021
 
 ## Goal
-Show the in-app rating after purchasing an item. </br>
+Show the in-app rating after purchasing an item.
+
 Show the in-app rating after reviewing a purchase with 5-stars.
 
 ## Screenshots
