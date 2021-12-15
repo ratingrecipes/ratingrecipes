@@ -15,7 +15,7 @@ Delivered to your Inbox. Every Week.
 
 | App Rating Charts                                                                   |
 |-------------------------------------------------------------------------------------|
-| [Apps with In-App Rating](https://ratingrecipes.com/charts/in-app-rating/)           |
-| [Country Specific Rating](https://ratingrecipes.com/apps/country-specific-rating/) |
+| [Apps with In-App Rating](https://ratingrecipes.com/charts/in-app-rating/)          |
+| [Country Specific Rating](https://ratingrecipes.com/apps/country-specific-rating/)  |
 
 ![rating recipe](https://user-images.githubusercontent.com/140911/138474135-86a3425a-bc3a-4ffe-914d-ddaa530acb7a.jpeg)
