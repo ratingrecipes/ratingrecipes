@@ -1,4 +1,4 @@
-# The Best App Rating Recipes
+## The Best App Rating Recipes
 
 **[Subscribe to Receive New Recipes and Charts](https://newsletter.ratingrecipes.com/)**
 
