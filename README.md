@@ -1,6 +1,6 @@
 ## The Best App Rating Recipes
 
-**[Subscribe to Receive New Recipes and Charts](https://newsletter.ratingrecipes.com/)**
+**[Subscribe to Receive New Recipes](https://newsletter.ratingrecipes.com/)**
 
 Delivered to your Inbox. Every Week.
 
