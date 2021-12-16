@@ -51,7 +51,7 @@ A list of top apps that use the in-app rating library.
 | Tubi                                                   | Yes                   |
 | Twitter                                                | No                    |
 | Walmart                                                | Yes                   |
-| WhatApp                                                | Yes                   |
+| WhatsApp                                                | Yes                   |
 | Zelle                                                  | Yes                   |
 
 Source: analysis of Google Play APKs using [jadx](https://github.com/skylot/jadx), searching for uses of the [In-App Review API](https://developer.android.com/guide/playcore/in-app-review).
