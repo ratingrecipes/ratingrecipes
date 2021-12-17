@@ -8,8 +8,8 @@ start
 :GOTO In-app rating flow;
 end
 
-:User reviews purchase once package arrives;
-if (Is purchase review 5-stars?) then (yes)
+:User reviews purchase (available after delivery arrives);
+if (Did user rate the purchase with 5-stars?) then (yes)
     :GOTO In-app rating flow;
     end
 else (no)
