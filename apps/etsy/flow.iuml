@@ -5,18 +5,18 @@ title Etsy App Rating Recipe\n[[https://ratingrecipes.com/apps/etsy]]
 start
 
 :User completes purchase;
-:GOTO elgibility flow;
+:GOTO In-app rating flow;
 end
 
 :User reviews purchase once package arrives;
 if (Is purchase review 5-stars?) then (yes)
-    :GOTO elgibility flow;
+    :GOTO In-app rating flow;
     end
 else (no)
     end
 endif
 
-:In-app rating elgibility flow;
+:In-app rating flow;
 if (Has user seen in-app rating within 30 days?) then (yes)
     end
 else (no)
