@@ -23,7 +23,7 @@ A list of top apps that use the in-app rating library.
 | Discord                                                | No                    |
 | Disney                                                 | Yes                   |
 | Duolingo                                               | No                    |
-| Google Pay                                             | Yes                   |
+| Google Pay                                             | No                    |
 | HBO Max                                                | No                    |
 | Hopper                                                 | No                    |
 | Instagram                                              | Yes                   |
