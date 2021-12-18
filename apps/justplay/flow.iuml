@@ -1,0 +1,19 @@
+@startuml
+
+title JustPlay App Rating Recipe\n[[https://ratingrecipes.com/apps/justplay]]
+
+:User cashes out winnings;
+:User exits app;
+:User launches app;
+if (Has the user cashed out?) then (yes)
+    if (Have we asked the user to rate since cashout?) then (yes)
+        end
+    else (no)
+        :Show in-app rating;
+        end
+    endif
+else (no)
+    end
+endif
+
+@enduml

@@ -9,6 +9,7 @@ A comparison of country specific ratings for top apps.
 | [Etsy](https://ratingrecipes.com/apps/etsy/)           | 4.9 | 4.9     | 4.8    | 4.4   |
 | [Headspace](https://ratingrecipes.com/apps/headspace/) | 4.5 | 4.3     | 4.7    | 4.5   |
 | [Hulu](https://ratingrecipes.com/apps/hulu/)           | 3.9 | N/A     | N/A    | N/A   |
+| [JustPlay](https://ratingrecipes.com/apps/justplay/)   | 4.4 | N/A     | N/A    | N/A   |
 | [Peacock TV](https://ratingrecipes.com/apps/peacock/)  | 4.4 | N/A     | N/A    | N/A   |
 | Affirm                                                 | 4.7 | N/A     | N/A    | N/A   |
 | Alexa                                                  | 4.4 | 4.4     | 4.7    | 4.3   |
@@ -27,7 +28,6 @@ A comparison of country specific ratings for top apps.
 | HBO Max                                                | 3.8 | N/A     | 3.2    | N/A   |
 | Hopper                                                 | 3.8 | 3.8     | 4.2    | 4     |
 | Instagram                                              | 4.1 | 3.5     | 4.4    | 4.2   |
-| JustPlay                                               | 4.4 | N/A     | N/A    | N/A   |
 | Magic Tool                                             | 4.5 | 4       | 5      | 4.2   |
 | McDonalds                                              | 4.2 | 4.5     | 4.7    | 4.2   |
 | Messenger                                              | 4.1 | 3.8     | 4.3    | 4.2   |
