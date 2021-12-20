@@ -11,6 +11,7 @@ Delivered to your Inbox. Every Week.
 | [Etsy](https://ratingrecipes.com/apps/etsy/)           |
 | [Headspace](https://ratingrecipes.com/apps/headspace/) |
 | [Hulu](https://ratingrecipes.com/apps/hulu/)           |
+| [JustPlay](https://ratingrecipes.com/apps/justplay/)   |
 | [Peacock TV](https://ratingrecipes.com/apps/peacock/)  |
 
 | App Rating Charts                                                                   |

@@ -9,6 +9,7 @@ A list of top apps that use the in-app rating library.
 | [Etsy](https://ratingrecipes.com/apps/etsy/)           | Yes                   |
 | [Headspace](https://ratingrecipes.com/apps/headspace/) | Yes                   |
 | [Hulu](https://ratingrecipes.com/apps/hulu/)           | Yes                   |
+| [JustPlay](https://ratingrecipes.com/apps/justplay/)   | Yes                   |
 | [Peacock TV](https://ratingrecipes.com/apps/peacock/)  | Yes                   |
 | Affirm                                                 | No                    |
 | Alexa                                                  | Yes                   |
@@ -27,7 +28,6 @@ A list of top apps that use the in-app rating library.
 | HBO Max                                                | No                    |
 | Hopper                                                 | No                    |
 | Instagram                                              | Yes                   |
-| JustPlay                                               | Yes                   |
 | Magic Tool                                             | No                    |
 | McDonalds                                              | Yes                   |
 | Messenger                                              | No                    |
