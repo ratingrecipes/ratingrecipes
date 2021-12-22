@@ -1,0 +1,25 @@
+@startuml
+
+title NewsBreak App Rating Recipe\n[[https://ratingrecipes.com/apps/newsbreak]]
+
+start
+
+:User visits home screen;
+if (Has the backend triggered an app rating flow?) then (yes)
+  if (Has the user rated within 60 days?) then (yes)
+    end
+  else (no)
+    :Show a feedback prompt with 5 stars;
+    if (Did the user select 4 or more stars?) then (yes)
+      :Show the in-app rating;
+      end
+    else (no)
+      :Show a text box for user feedback;
+      end
+    endif
+  endif
+else (no)
+  end
+endif
+
+@enduml

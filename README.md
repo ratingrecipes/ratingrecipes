@@ -12,6 +12,7 @@ Delivered to your Inbox. Every Week.
 | [Headspace](https://ratingrecipes.com/apps/headspace/) |
 | [Hulu](https://ratingrecipes.com/apps/hulu/)           |
 | [JustPlay](https://ratingrecipes.com/apps/justplay/)   |
+| [NewsBreak](https://ratingrecipes.com/apps/newsbreak/) |
 | [Peacock TV](https://ratingrecipes.com/apps/peacock/)  |
 
 | App Rating Charts                                                                   |
