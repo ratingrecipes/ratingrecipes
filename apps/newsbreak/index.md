@@ -8,7 +8,7 @@ NewsBreak
 
 **Genre** News
 
-**Links** [Apple]([https://apps.apple.com/us/app/etsy-custom-creative-goods/id477128284)/[Android](https://play.google.com/store/apps/details?id=com.particlenews.newsbreak)
+**Links** [Apple](https://apps.apple.com/us/app/etsy-custom-creative-goods/id477128284)/[Android](https://play.google.com/store/apps/details?id=com.particlenews.newsbreak)
 
 **Similar Apps** Smartnews
 
