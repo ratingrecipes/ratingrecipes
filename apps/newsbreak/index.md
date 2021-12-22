@@ -2,7 +2,7 @@
 
 ## About
 
-<img src='https://play-lh.googleusercontent.com/giKCCPigafUbKQ1AkXVxSjQ1PggetEI96ORNKxxhQdvGAFhto71kO4zf7gZ9oOdLIQe5=s180-rw' width='10%'>
+<img src='https://play-lh.googleusercontent.com/tglON9RT5UtgM5omnTCl-PsDxyKIxg4jc8Q36WGEoYmEKjZXsTaUv7HbHo_xEoCloQ=s360-rw' width='10%'>
 
 NewsBreak
 
