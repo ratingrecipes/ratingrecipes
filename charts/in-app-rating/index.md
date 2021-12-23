@@ -32,7 +32,7 @@ A list of top apps that use the in-app rating library.
 | Magic Tool                                             | No                    |
 | McDonalds                                              | Yes                   |
 | Messenger                                              | No                    |
-| One Booster                                            | Yes                   |
+| One Booster                                            | No                    |
 | Paramount+                                             | No                    |
 | Paypal                                                 | No                    |
 | Photograph Art Lab                                     | No                    |
