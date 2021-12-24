@@ -13,6 +13,7 @@ Delivered to your Inbox. Every Week.
 | [Hulu](https://ratingrecipes.com/apps/hulu/)           |
 | [JustPlay](https://ratingrecipes.com/apps/justplay/)   |
 | [NewsBreak](https://ratingrecipes.com/apps/newsbreak/) |
+| [One Booster](https://ratingrecipes.com/apps/onebooster/) |
 | [Peacock TV](https://ratingrecipes.com/apps/peacock/)  |
 
 | App Rating Charts                                                                   |

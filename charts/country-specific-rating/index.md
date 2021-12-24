@@ -10,7 +10,8 @@ A comparison of country specific ratings for top apps.
 | [Headspace](https://ratingrecipes.com/apps/headspace/) | 4.5 | 4.3     | 4.7    | 4.5   |
 | [Hulu](https://ratingrecipes.com/apps/hulu/)           | 3.9 | N/A     | N/A    | N/A   |
 | [JustPlay](https://ratingrecipes.com/apps/justplay/)   | 4.4 | N/A     | N/A    | N/A   |
-| [NewsBreak](https://ratingrecipes.com/apps/newsbreak/)  | 4.1 | 3.8     | 4.3    | 4.3   |
+| [NewsBreak](https://ratingrecipes.com/apps/newsbreak/) | 4.1 | 3.8     | 4.3    | 4.3   |
+| [One Booster](https://ratingrecipes.com/apps/onebooster/) | 4.6 | 4.5     | 4.6    | 4.5   |
 | [Peacock TV](https://ratingrecipes.com/apps/peacock/)  | 4.4 | N/A     | N/A    | N/A   |
 | Affirm                                                 | 4.7 | N/A     | N/A    | N/A   |
 | Alexa                                                  | 4.4 | 4.4     | 4.7    | 4.3   |
@@ -32,7 +33,6 @@ A comparison of country specific ratings for top apps.
 | Magic Tool                                             | 4.5 | 4       | 5      | 4.2   |
 | McDonalds                                              | 4.2 | 4.5     | 4.7    | 4.2   |
 | Messenger                                              | 4.1 | 3.8     | 4.3    | 4.2   |
-| One Booster                                            | 4.6 | 4.5     | 4.6    | 4.5   |
 | Paramount+                                             | 3.6 | N/A     | 3.7    | N/A   |
 | Paypal                                                 | 4.4 | 4.7     | 4.5    | 3.8   |
 | Photograph Art Lab                                     | 1.7 | 1.4     | N/A    | N/A   |

@@ -11,6 +11,7 @@ A list of top apps that use the in-app rating library.
 | [Hulu](https://ratingrecipes.com/apps/hulu/)           | Yes                   |
 | [JustPlay](https://ratingrecipes.com/apps/justplay/)   | Yes                   |
 | [NewsBreak](https://ratingrecipes.com/apps/newsbreak/) | Yes                   |
+| [One Booster](https://ratingrecipes.com/apps/onebooster/) | No                 |
 | [Peacock TV](https://ratingrecipes.com/apps/peacock/)  | Yes                   |
 | Affirm                                                 | No                    |
 | Alexa                                                  | Yes                   |
@@ -32,7 +33,6 @@ A list of top apps that use the in-app rating library.
 | Magic Tool                                             | No                    |
 | McDonalds                                              | Yes                   |
 | Messenger                                              | No                    |
-| One Booster                                            | No                    |
 | Paramount+                                             | No                    |
 | Paypal                                                 | No                    |
 | Photograph Art Lab                                     | No                    |

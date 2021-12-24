@@ -1,0 +1,22 @@
+@startuml
+
+title One Booster App Rating Recipe\n[[https://ratingrecipes.com/apps/onebooster]]
+
+start
+
+:User completes Boost, Clean, RAM saver, or CPU cooler;
+:User returns to home screen;
+if (Is the app widgets promotion displayed?) then (yes)
+    end
+else (no)
+    :Show the feedback screen;
+    if (Did the user select 5 stars on the feedback screen?) then (yes)
+        :Direct the user to Google Play to rate;
+        end
+    else (no)
+        :Ask the user to submit custom feedback;
+        end
+    endif
+endif
+
+@enduml
