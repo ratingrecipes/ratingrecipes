@@ -13,6 +13,7 @@ A comparison of country specific ratings for top apps.
 | [NewsBreak](https://ratingrecipes.com/apps/newsbreak/) | 4.1 | 3.8     | 4.3    | 4.3   |
 | [One Booster](https://ratingrecipes.com/apps/onebooster/) | 4.6 | 4.5     | 4.6    | 4.5   |
 | [Peacock TV](https://ratingrecipes.com/apps/peacock/)  | 4.4 | N/A     | N/A    | N/A   |
+| [Pinterest](https://ratingrecipes.com/apps/pinterest/)  | 4.6 | 4.4     | 4.6    | 4.4   |
 | Affirm                                                 | 4.7 | N/A     | N/A    | N/A   |
 | Alexa                                                  | 4.4 | 4.4     | 4.7    | 4.3   |
 | Amazon                                                 | 4.4 | 4.2     | 4.4    | 4.3   |
@@ -36,7 +37,6 @@ A comparison of country specific ratings for top apps.
 | Paramount+                                             | 3.6 | N/A     | 3.7    | N/A   |
 | Paypal                                                 | 4.4 | 4.7     | 4.5    | 3.8   |
 | Photograph Art Lab                                     | 1.7 | 1.4     | N/A    | N/A   |
-| Pinterest                                              | 4.6 | 4.4     | 4.6    | 4.4   |
 | Pluto TV                                               | 4.3 | 3.6     | 4.2    | N/A   |
 | Prime Video                                            | 4.4 | 4.2     | 4.3    | 4.2   |
 | Roku                                                   | 4.4 | 4.2     | 4.4    | N/A   |
