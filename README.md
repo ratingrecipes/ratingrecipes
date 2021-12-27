@@ -1,8 +1,8 @@
 ## The Best App Rating Recipes
 
-**[Subscribe to Receive New Recipes](https://newsletter.ratingrecipes.com/)**
+👉**==[Subscribe to Receive New Recipes](https://newsletter.ratingrecipes.com/)==**👈
 
-Delivered to your Inbox. Every Week.
+![rating recipe](https://user-images.githubusercontent.com/140911/138474135-86a3425a-bc3a-4ffe-914d-ddaa530acb7a.jpeg)
 
 | App Rating Recipes                                     |
 |:------------------------------------------------------:|
@@ -21,5 +21,3 @@ Delivered to your Inbox. Every Week.
 |-------------------------------------------------------------------------------------|
 | [Apps with In-App Rating](https://ratingrecipes.com/charts/in-app-rating/)          |
 | [Country Specific Rating](https://ratingrecipes.com/charts/country-specific-rating/)  |
-
-![rating recipe](https://user-images.githubusercontent.com/140911/138474135-86a3425a-bc3a-4ffe-914d-ddaa530acb7a.jpeg)
