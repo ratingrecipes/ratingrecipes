@@ -13,6 +13,7 @@ A list of top apps that use the in-app rating library.
 | [NewsBreak](https://ratingrecipes.com/apps/newsbreak/) | Yes                   |
 | [One Booster](https://ratingrecipes.com/apps/onebooster/) | No                 |
 | [Peacock TV](https://ratingrecipes.com/apps/peacock/)  | Yes                   |
+| [Pinterest](https://ratingrecipes.com/apps/pinterest/)  | No                    |
 | Affirm                                                 | No                    |
 | Alexa                                                  | Yes                   |
 | Amazon                                                 | Yes                   |
@@ -36,7 +37,6 @@ A list of top apps that use the in-app rating library.
 | Paramount+                                             | No                    |
 | Paypal                                                 | No                    |
 | Photograph Art Lab                                     | No                    |
-| Pinterest                                              | Yes                   |
 | Pluto TV                                               | Yes                   |
 | Prime Video                                            | No                    |
 | Roku                                                   | No                    |

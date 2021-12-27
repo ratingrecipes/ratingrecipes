@@ -15,6 +15,7 @@ Delivered to your Inbox. Every Week.
 | [NewsBreak](https://ratingrecipes.com/apps/newsbreak/) |
 | [One Booster](https://ratingrecipes.com/apps/onebooster/) |
 | [Peacock TV](https://ratingrecipes.com/apps/peacock/)  |
+| [Pinterest](https://ratingrecipes.com/apps/pinterest/)  |
 
 | App Rating Charts                                                                   |
 |-------------------------------------------------------------------------------------|

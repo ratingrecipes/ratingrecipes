@@ -1,0 +1,23 @@
+@startuml
+
+title Pinterest App Rating Recipe\n[[https://ratingrecipes.com/apps/doordash]]
+
+start
+
+:User launches app
+# > 7 days since first app launch?
+# App launched > 5 times?
+# User uploaded > 10 pins?
+# > 1 day since the user set a rating reminder?;
+switch (Show custom rating prompt)
+case ( Rate now )
+  :Direct the user to Google Play to rate;
+  end
+case ( No ) 
+  end
+case ( Later)
+  :Set rating reminder;
+  end
+endswitch
+
+@enduml
