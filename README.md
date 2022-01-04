@@ -1,25 +1,15 @@
-## The Best App Rating Recipes
+## Rating Recipes
 
-**[Subscribe to Receive New Recipes](https://newsletter.ratingrecipes.com/)**
+### Description
 
-Delivered to your Inbox. Every Week.
+This is the community repository for [RatingRecipes.com](https://ratingrecipes.com).
 
-| App Rating Recipes                                     |
-|:------------------------------------------------------:|
-| [Calm](https://ratingrecipes.com/apps/calm/)           |
-| [DoorDash](https://ratingrecipes.com/apps/doordash/)   |
-| [Etsy](https://ratingrecipes.com/apps/etsy/)           |
-| [Headspace](https://ratingrecipes.com/apps/headspace/) |
-| [Hulu](https://ratingrecipes.com/apps/hulu/)           |
-| [JustPlay](https://ratingrecipes.com/apps/justplay/)   |
-| [NewsBreak](https://ratingrecipes.com/apps/newsbreak/) |
-| [One Booster](https://ratingrecipes.com/apps/onebooster/) |
-| [Peacock TV](https://ratingrecipes.com/apps/peacock/)  |
-| [Pinterest](https://ratingrecipes.com/apps/pinterest/)  |
+The goal of this space is to educate app teams on the most popular strategies to request ratings and reviews.
 
-| App Rating Charts                                                                   |
-|-------------------------------------------------------------------------------------|
-| [Apps with In-App Rating](https://ratingrecipes.com/charts/in-app-rating/)          |
-| [Country Specific Rating](https://ratingrecipes.com/charts/country-specific-rating/)  |
+### Pick the next app
 
-![rating recipe](https://user-images.githubusercontent.com/140911/138474135-86a3425a-bc3a-4ffe-914d-ddaa530acb7a.jpeg)
+If you would like to see an app that is not yet added, [open an issue](https://github.com/ratingrecipes/ratingrecipes/issues)!
+
+### Contributing
+
+If you would like to make an update, simply open [a new pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) against the main branch.
