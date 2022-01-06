@@ -13,7 +13,7 @@ If you would like to see an app that is not yet added, [open an issue](https://g
 ### How to discover new rating recipes
 We use [jadx](https://github.com/skylot/jadx) to analyze Android APKs and find out exactly how apps ask users for ratings and reviews.
 
-We [created a video(https://www.youtube.com/watch?v=Egxv9xWN988) detailing this process step-by-step in case you wish to analyze an app.
+We [created a video](https://www.youtube.com/watch?v=Egxv9xWN988) detailing this process step-by-step in case you wish to analyze an app.
 
 [![Discover in-app rating logic within Android apps](http://img.youtube.com/vi/Egxv9xWN988/0.jpg)](https://www.youtube.com/watch?v=Egxv9xWN988 "Discover in-app rating logic within Android apps")
 
