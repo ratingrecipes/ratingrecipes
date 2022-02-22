@@ -6,34 +6,51 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/inAppRating"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Launch In-App Rating"
-        app:layout_constraintBottom_toTopOf="@id/ratingPrompt"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/ratingPrompt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Show Custom Rating Prompt"
-        app:layout_constraintBottom_toTopOf="@id/sentimentPrompt"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/inAppRating" />
-
-    <Button
-        android:id="@+id/sentimentPrompt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Show Sentiment Prompt"
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/ratingPrompt" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/beatLevelOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Beat Level One" />
+
+        <Button
+            android:id="@+id/beatLevelTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Beat Level Two" />
+
+        <Button
+            android:id="@+id/beatLevelThree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Beat Level Three" />
+
+        <Button
+            android:id="@+id/sentimentPrompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Sentiment Prompt" />
+
+        <Button
+            android:id="@+id/inAppRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Launch In-App Rating" />
+
+        <Button
+            android:id="@+id/customRatingPrompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Custom Rating Prompt"
+            app:layout_constraintTop_toBottomOf="@id/inAppRating" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

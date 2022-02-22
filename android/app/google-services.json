@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1011812150779",
+    "project_id": "ratingrecipes",
+    "storage_bucket": "ratingrecipes.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1011812150779:android:184730188c3e0d3b56ef5e",
+        "android_client_info": {
+          "package_name": "com.ratingrecipes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1011812150779-98qqpja9e1kesplmi7msr0hnv3tq7lto.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfJHof6hJsOvJYhIOjVrM1_Nzop5rDe90"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1011812150779-98qqpja9e1kesplmi7msr0hnv3tq7lto.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
