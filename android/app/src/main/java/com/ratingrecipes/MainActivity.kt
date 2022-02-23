@@ -9,6 +9,9 @@ import com.google.firebase.analytics.FirebaseAnalytics
 import com.google.firebase.analytics.ktx.analytics
 import com.google.firebase.analytics.ktx.logEvent
 import com.google.firebase.ktx.Firebase
+import com.google.firebase.remoteconfig.FirebaseRemoteConfig
+import com.google.firebase.remoteconfig.ktx.remoteConfig
+import com.google.firebase.remoteconfig.ktx.remoteConfigSettings
 import com.ratingrecipes.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -16,6 +19,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
 
     private lateinit var firebaseAnalytics: FirebaseAnalytics
+    private lateinit var firebaseRemoteConfig: FirebaseRemoteConfig
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,12 +29,21 @@ class MainActivity : AppCompatActivity() {
 
         firebaseAnalytics = Firebase.analytics
 
+        firebaseRemoteConfig = Firebase.remoteConfig
+        val configSettings = remoteConfigSettings {
+            minimumFetchIntervalInSeconds = 3600
+        }
+        firebaseRemoteConfig.setConfigSettingsAsync(configSettings)
+//        remoteConfig.setDefaultsAsync(R.xml.remote_config_defaults
+
         binding.beatLevelOne.setOnClickListener {
             firebaseAnalytics.logEvent(FirebaseAnalytics.Event.LEVEL_END) {
                 param(FirebaseAnalytics.Param.LEVEL_NAME, "Level One")
                 param("level_difficulty", 1)
                 param(FirebaseAnalytics.Param.SUCCESS, "true")
             }
+
+            showPrompt(1)
         }
 
         binding.beatLevelTwo.setOnClickListener {
@@ -39,6 +52,8 @@ class MainActivity : AppCompatActivity() {
                 param("level_difficulty", 2)
                 param(FirebaseAnalytics.Param.SUCCESS, "true")
             }
+
+            showPrompt(2)
         }
 
         binding.beatLevelThree.setOnClickListener {
@@ -47,36 +62,16 @@ class MainActivity : AppCompatActivity() {
                 param("level_difficulty", 3)
                 param(FirebaseAnalytics.Param.SUCCESS, "true")
             }
+
+            showPrompt(3)
         }
 
         binding.sentimentPrompt.setOnClickListener {
-            firebaseAnalytics.logEvent("sentiment_prompt_viewed", null)
-            MaterialAlertDialogBuilder(this)
-                .setMessage("Do you want enjoy this app?")
-                .setNegativeButton("No") { dialog, which ->
-                    firebaseAnalytics.logEvent("sentiment_prompt_negative", null)
-                }
-                .setPositiveButton("Yes") { dialog, which ->
-                    firebaseAnalytics.logEvent("sentiment_prompt_positive", null)
-                }
-                .show()
+            showSentimentPrompt()
         }
 
         binding.inAppRating.setOnClickListener {
-            firebaseAnalytics.logEvent("in_app_rating_started", null)
-            val manager = ReviewManagerFactory.create(applicationContext)
-            val request = manager.requestReviewFlow()
-            request.addOnCompleteListener { task ->
-                if (task.isSuccessful) {
-                    val reviewInfo = task.result
-                    val flow = manager.launchReviewFlow(this, reviewInfo)
-                    flow.addOnCompleteListener { _ ->
-                        firebaseAnalytics.logEvent("in_app_rating_complete", null)
-                    }
-                } else {
-                    Toast.makeText(this, task.exception.toString(), Toast.LENGTH_LONG).show()
-                }
-            }
+            showInAppRating()
         }
 
         binding.customRatingPrompt.setOnClickListener {
@@ -90,6 +85,47 @@ class MainActivity : AppCompatActivity() {
                     firebaseAnalytics.logEvent("custom_rating_prompt_open_store", null)
                 }
                 .show()
+        }
+    }
+
+    private fun showPrompt(currentLevel: Long) {
+        val sentimentPromptLevel = firebaseRemoteConfig.getLong("sentiment_prompt_level")
+        val inAppRatingLevel = firebaseRemoteConfig.getLong("in_app_rating_level")
+
+        if (currentLevel == sentimentPromptLevel) {
+            showSentimentPrompt()
+        } else if (currentLevel == inAppRatingLevel) {
+            showInAppRating()
+        }
+    }
+
+    private fun showSentimentPrompt() {
+        firebaseAnalytics.logEvent("sentiment_prompt_viewed", null)
+        MaterialAlertDialogBuilder(this)
+            .setMessage("Do you want enjoy this app?")
+            .setNegativeButton("No") { dialog, which ->
+                firebaseAnalytics.logEvent("sentiment_prompt_negative", null)
+            }
+            .setPositiveButton("Yes") { dialog, which ->
+                firebaseAnalytics.logEvent("sentiment_prompt_positive", null)
+            }
+            .show()
+    }
+
+    private fun showInAppRating() {
+        firebaseAnalytics.logEvent("in_app_rating_started", null)
+        val manager = ReviewManagerFactory.create(applicationContext)
+        val request = manager.requestReviewFlow()
+        request.addOnCompleteListener { task ->
+            if (task.isSuccessful) {
+                val reviewInfo = task.result
+                val flow = manager.launchReviewFlow(this, reviewInfo)
+                flow.addOnCompleteListener { _ ->
+                    firebaseAnalytics.logEvent("in_app_rating_complete", null)
+                }
+            } else {
+                Toast.makeText(this, task.exception.toString(), Toast.LENGTH_LONG).show()
+            }
         }
     }
 }
