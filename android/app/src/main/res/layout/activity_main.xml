@@ -45,25 +45,6 @@
             android:layout_height="wrap_content"
             android:text="Beat Level Five" />
 
-        <Button
-            android:id="@+id/sentimentPrompt"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Show Sentiment Prompt" />
-
-        <Button
-            android:id="@+id/inAppRating"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Launch In-App Rating" />
-
-        <Button
-            android:id="@+id/customRatingPrompt"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Show Custom Rating Prompt"
-            app:layout_constraintTop_toBottomOf="@id/inAppRating" />
-
         <TextView
             android:id="@+id/sentimentPromptLevel"
             android:layout_width="wrap_content"
