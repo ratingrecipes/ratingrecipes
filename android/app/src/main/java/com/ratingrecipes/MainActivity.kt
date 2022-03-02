@@ -21,6 +21,9 @@ class MainActivity : AppCompatActivity() {
     private lateinit var firebaseAnalytics: FirebaseAnalytics
     private lateinit var firebaseRemoteConfig: FirebaseRemoteConfig
 
+    private var sentimentPromptLevel = 0L
+    private var inAppRatingLevel = 0L
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
@@ -31,10 +34,18 @@ class MainActivity : AppCompatActivity() {
 
         firebaseRemoteConfig = Firebase.remoteConfig
         val configSettings = remoteConfigSettings {
-            minimumFetchIntervalInSeconds = 3600
+            minimumFetchIntervalInSeconds = 5
         }
         firebaseRemoteConfig.setConfigSettingsAsync(configSettings)
-//        remoteConfig.setDefaultsAsync(R.xml.remote_config_defaults
+//        remoteConfig.setDefaultsAsync(R.xml.remote_config_defaults)
+
+        firebaseRemoteConfig.fetchAndActivate().addOnCompleteListener {
+            sentimentPromptLevel = firebaseRemoteConfig.getLong("sentiment_prompt_level")
+            inAppRatingLevel = firebaseRemoteConfig.getLong("in_app_rating_level")
+
+            binding.sentimentPromptLevel.text = "Sentiment Prompt Level: $sentimentPromptLevel"
+            binding.inAppRatingLevel.text = "In-App Rating Level: $inAppRatingLevel"
+        }
 
         binding.beatLevelOne.setOnClickListener {
             firebaseAnalytics.logEvent(FirebaseAnalytics.Event.LEVEL_END) {
@@ -66,6 +77,26 @@ class MainActivity : AppCompatActivity() {
             showPrompt(3)
         }
 
+        binding.beatLevelFour.setOnClickListener {
+            firebaseAnalytics.logEvent(FirebaseAnalytics.Event.LEVEL_END) {
+                param(FirebaseAnalytics.Param.LEVEL_NAME, "Level Four")
+                param("level_difficulty", 4)
+                param(FirebaseAnalytics.Param.SUCCESS, "true")
+            }
+
+            showPrompt(4)
+        }
+
+        binding.beatLevelFive.setOnClickListener {
+            firebaseAnalytics.logEvent(FirebaseAnalytics.Event.LEVEL_END) {
+                param(FirebaseAnalytics.Param.LEVEL_NAME, "Level Five")
+                param("level_difficulty", 5)
+                param(FirebaseAnalytics.Param.SUCCESS, "true")
+            }
+
+            showPrompt(5)
+        }
+
         binding.sentimentPrompt.setOnClickListener {
             showSentimentPrompt()
         }
@@ -89,9 +120,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun showPrompt(currentLevel: Long) {
-        val sentimentPromptLevel = firebaseRemoteConfig.getLong("sentiment_prompt_level")
-        val inAppRatingLevel = firebaseRemoteConfig.getLong("in_app_rating_level")
-
         if (currentLevel == sentimentPromptLevel) {
             showSentimentPrompt()
         } else if (currentLevel == inAppRatingLevel) {
