@@ -21,8 +21,8 @@ class MainActivity : AppCompatActivity() {
     private lateinit var firebaseAnalytics: FirebaseAnalytics
     private lateinit var firebaseRemoteConfig: FirebaseRemoteConfig
 
-    private var sentimentPromptLevel = ""
-    private var inAppRatingLevel = ""
+    private var promptLocation = ""
+    private var enableInAppRating = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -40,11 +40,11 @@ class MainActivity : AppCompatActivity() {
 //        remoteConfig.setDefaultsAsync(R.xml.remote_config_defaults)
 
         firebaseRemoteConfig.fetchAndActivate().addOnCompleteListener {
-            sentimentPromptLevel = firebaseRemoteConfig.getString("rr_sentiment_prompt_location")
-            inAppRatingLevel = firebaseRemoteConfig.getString("rr_in_app_rating_location")
+            promptLocation = firebaseRemoteConfig.getString("rr_prompt_location")
+            enableInAppRating = firebaseRemoteConfig.getBoolean("rr_enable_in_app_rating")
 
-            binding.sentimentPromptLevel.text = "Sentiment Prompt Level: $sentimentPromptLevel"
-            binding.inAppRatingLevel.text = "In-App Rating Level: $inAppRatingLevel"
+            binding.sentimentPromptLevel.text = "Prompt Location: $promptLocation"
+            binding.inAppRatingLevel.text = "Enable In-App Rating: $enableInAppRating"
         }
 
         binding.beatLevelOne.setOnClickListener {
@@ -76,40 +76,22 @@ class MainActivity : AppCompatActivity() {
 
             showPrompt("level_three")
         }
-
-        binding.beatLevelFour.setOnClickListener {
-            firebaseAnalytics.logEvent(FirebaseAnalytics.Event.LEVEL_END) {
-                param(FirebaseAnalytics.Param.LEVEL_NAME, "Level Four")
-                param("level_difficulty", 4)
-                param(FirebaseAnalytics.Param.SUCCESS, "true")
-            }
-
-            showPrompt("level_four")
-        }
-
-        binding.beatLevelFive.setOnClickListener {
-            firebaseAnalytics.logEvent(FirebaseAnalytics.Event.LEVEL_END) {
-                param(FirebaseAnalytics.Param.LEVEL_NAME, "Level Five")
-                param("level_difficulty", 5)
-                param(FirebaseAnalytics.Param.SUCCESS, "true")
-            }
-
-            showPrompt("level_five")
-        }
     }
 
     private fun showPrompt(currentLevel: String) {
-        if (currentLevel == sentimentPromptLevel) {
-            showSentimentPrompt()
-        } else if (currentLevel == inAppRatingLevel) {
-            showInAppRating()
+        if (currentLevel == promptLocation) {
+            if (enableInAppRating) {
+                showInAppRating(showDebugToast = true)
+            } else {
+                showSentimentPrompt()
+            }
         }
     }
 
     private fun showSentimentPrompt() {
         firebaseAnalytics.logEvent("rr_sentiment_prompt_view", null)
         MaterialAlertDialogBuilder(this)
-            .setMessage("Loving our app?")
+            .setMessage("Do you love our game?")
             .setNegativeButton("Nope") { dialog, which ->
                 firebaseAnalytics.logEvent("rr_sentiment_prompt_negative", null)
             }
@@ -119,7 +101,11 @@ class MainActivity : AppCompatActivity() {
             .show()
     }
 
-    private fun showInAppRating() {
+    private fun showInAppRating(showDebugToast: Boolean = false) {
+        if (showDebugToast) {
+            Toast.makeText(this, "In-App Rating Requested", Toast.LENGTH_SHORT).show()
+        }
+
         firebaseAnalytics.logEvent("rr_in_app_rating_start", null)
         val manager = ReviewManagerFactory.create(applicationContext)
         val request = manager.requestReviewFlow()
