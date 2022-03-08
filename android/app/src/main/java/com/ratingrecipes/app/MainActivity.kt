@@ -1,4 +1,4 @@
-package com.ratingrecipes
+package com.ratingrecipes.app
 
 import android.os.Bundle
 import android.widget.Toast
@@ -12,7 +12,7 @@ import com.google.firebase.ktx.Firebase
 import com.google.firebase.remoteconfig.FirebaseRemoteConfig
 import com.google.firebase.remoteconfig.ktx.remoteConfig
 import com.google.firebase.remoteconfig.ktx.remoteConfigSettings
-import com.ratingrecipes.databinding.ActivityMainBinding
+import com.ratingrecipes.app.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 

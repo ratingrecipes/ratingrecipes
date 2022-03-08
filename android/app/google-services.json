@@ -7,9 +7,9 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1011812150779:android:184730188c3e0d3b56ef5e",
+        "mobilesdk_app_id": "1:1011812150779:android:490de8e8c6706f7b56ef5e",
         "android_client_info": {
-          "package_name": "com.ratingrecipes"
+          "package_name": "com.ratingrecipes.app"
         }
       },
       "oauth_client": [
