@@ -21,9 +21,6 @@ class MainActivity : AppCompatActivity() {
     private lateinit var firebaseAnalytics: FirebaseAnalytics
     private lateinit var firebaseRemoteConfig: FirebaseRemoteConfig
 
-    private var promptLocation = ""
-    private var enableInAppRating = false
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
@@ -40,10 +37,10 @@ class MainActivity : AppCompatActivity() {
 //        remoteConfig.setDefaultsAsync(R.xml.remote_config_defaults)
 
         firebaseRemoteConfig.fetchAndActivate().addOnCompleteListener {
-            promptLocation = firebaseRemoteConfig.getString("rr_prompt_location")
+            recipeId = firebaseRemoteConfig.getString("rr_recipe_id")
             enableInAppRating = firebaseRemoteConfig.getBoolean("rr_enable_in_app_rating")
 
-            binding.sentimentPromptLevel.text = "Prompt Location: $promptLocation"
+            binding.sentimentPromptLevel.text = "Recipe Id: $recipeId"
             binding.inAppRatingLevel.text = "Enable In-App Rating: $enableInAppRating"
         }
 
@@ -54,7 +51,7 @@ class MainActivity : AppCompatActivity() {
                 param(FirebaseAnalytics.Param.SUCCESS, "true")
             }
 
-            showPrompt("level_one")
+            getRecipe("level_one")
         }
 
         binding.beatLevelTwo.setOnClickListener {
@@ -64,7 +61,7 @@ class MainActivity : AppCompatActivity() {
                 param(FirebaseAnalytics.Param.SUCCESS, "true")
             }
 
-            showPrompt("level_two")
+            getRecipe("level_two")
         }
 
         binding.beatLevelThree.setOnClickListener {
@@ -74,52 +71,7 @@ class MainActivity : AppCompatActivity() {
                 param(FirebaseAnalytics.Param.SUCCESS, "true")
             }
 
-            showPrompt("level_three")
-        }
-    }
-
-    private fun showPrompt(currentLevel: String) {
-        if (currentLevel == promptLocation) {
-            if (enableInAppRating) {
-                showInAppRating(showDebugToast = true)
-            } else {
-                showSentimentPrompt()
-            }
-        }
-    }
-
-    private fun showSentimentPrompt() {
-        firebaseAnalytics.logEvent("rr_sentiment_prompt_view", null)
-        MaterialAlertDialogBuilder(this)
-            .setMessage("Do you love our game?")
-            .setNegativeButton("Nope") { dialog, which ->
-                firebaseAnalytics.logEvent("rr_sentiment_prompt_negative", null)
-            }
-            .setPositiveButton("Heck, yeah!") { dialog, which ->
-                firebaseAnalytics.logEvent("rr_sentiment_prompt_positive", null)
-            }
-            .show()
-    }
-
-    private fun showInAppRating(showDebugToast: Boolean = false) {
-        if (showDebugToast) {
-            Toast.makeText(this, "In-App Rating Requested", Toast.LENGTH_SHORT).show()
-        }
-
-        firebaseAnalytics.logEvent("rr_in_app_rating_start", null)
-        val manager = ReviewManagerFactory.create(applicationContext)
-        val request = manager.requestReviewFlow()
-        request.addOnCompleteListener { task ->
-            if (task.isSuccessful) {
-                val reviewInfo = task.result
-                val flow = manager.launchReviewFlow(this, reviewInfo)
-                flow.addOnCompleteListener { _ ->
-                    firebaseAnalytics.logEvent("rr_in_app_rating_complete", null)
-                }
-            } else {
-                firebaseAnalytics.logEvent("rr_in_app_rating_failure", null)
-                Toast.makeText(this, task.exception.toString(), Toast.LENGTH_LONG).show()
-            }
+            getRecipe("level_three")
         }
     }
 }
