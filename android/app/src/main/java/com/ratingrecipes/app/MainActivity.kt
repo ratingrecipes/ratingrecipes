@@ -27,23 +27,6 @@ class MainActivity : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
 
-        firebaseAnalytics = Firebase.analytics
-
-        firebaseRemoteConfig = Firebase.remoteConfig
-        val configSettings = remoteConfigSettings {
-            minimumFetchIntervalInSeconds = 5
-        }
-        firebaseRemoteConfig.setConfigSettingsAsync(configSettings)
-//        remoteConfig.setDefaultsAsync(R.xml.remote_config_defaults)
-
-        firebaseRemoteConfig.fetchAndActivate().addOnCompleteListener {
-            recipeId = firebaseRemoteConfig.getString("rr_recipe_id")
-            enableInAppRating = firebaseRemoteConfig.getBoolean("rr_enable_in_app_rating")
-
-            binding.sentimentPromptLevel.text = "Recipe Id: $recipeId"
-            binding.inAppRatingLevel.text = "Enable In-App Rating: $enableInAppRating"
-        }
-
         binding.beatLevelOne.setOnClickListener {
             firebaseAnalytics.logEvent(FirebaseAnalytics.Event.LEVEL_END) {
                 param(FirebaseAnalytics.Param.LEVEL_NAME, "Level One")
