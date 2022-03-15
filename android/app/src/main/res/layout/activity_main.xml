@@ -38,21 +38,6 @@
             android:layout_margin="16dp"
             android:text="Finish Level Three"
             android:textSize="22sp" />
-
-        <TextView
-            android:id="@+id/sentimentPromptLevel"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
-            android:text="Sentiment Prompt Level: Not Set"
-            android:textSize="22sp" />
-
-        <TextView
-            android:id="@+id/inAppRatingLevel"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="In-App Rating Level: Not Set"
-            android:textSize="22sp" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

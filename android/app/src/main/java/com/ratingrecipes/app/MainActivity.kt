@@ -1,10 +1,7 @@
 package com.ratingrecipes.app
 
 import android.os.Bundle
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.google.android.material.dialog.MaterialAlertDialogBuilder
-import com.google.android.play.core.review.ReviewManagerFactory
 import com.google.firebase.analytics.FirebaseAnalytics
 import com.google.firebase.analytics.ktx.analytics
 import com.google.firebase.analytics.ktx.logEvent
@@ -12,6 +9,7 @@ import com.google.firebase.ktx.Firebase
 import com.google.firebase.remoteconfig.FirebaseRemoteConfig
 import com.google.firebase.remoteconfig.ktx.remoteConfig
 import com.google.firebase.remoteconfig.ktx.remoteConfigSettings
+import com.ratingrecipes.RatingRecipes
 import com.ratingrecipes.app.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -27,6 +25,26 @@ class MainActivity : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
 
+        firebaseAnalytics = Firebase.analytics
+
+        if (BuildConfig.DEBUG) {
+            firebaseRemoteConfig = Firebase.remoteConfig
+            val configSettings = remoteConfigSettings {
+                minimumFetchIntervalInSeconds = 5
+            }
+            firebaseRemoteConfig.setConfigSettingsAsync(configSettings)
+        }
+        firebaseRemoteConfig.fetchAndActivate()
+
+        RatingRecipes.debug = BuildConfig.DEBUG
+
+        RatingRecipes.prepare(
+            RatingRecipes.Ingredients.Firebase(
+                applicationContext = applicationContext,
+                firebase = Firebase
+            )
+        )
+
         binding.beatLevelOne.setOnClickListener {
             firebaseAnalytics.logEvent(FirebaseAnalytics.Event.LEVEL_END) {
                 param(FirebaseAnalytics.Param.LEVEL_NAME, "Level One")
@@ -34,7 +52,7 @@ class MainActivity : AppCompatActivity() {
                 param(FirebaseAnalytics.Param.SUCCESS, "true")
             }
 
-            getRecipe("level_one")
+            getAndHandleRecipe("level_one")
         }
 
         binding.beatLevelTwo.setOnClickListener {
@@ -44,7 +62,7 @@ class MainActivity : AppCompatActivity() {
                 param(FirebaseAnalytics.Param.SUCCESS, "true")
             }
 
-            getRecipe("level_two")
+            getAndHandleRecipe("level_two")
         }
 
         binding.beatLevelThree.setOnClickListener {
@@ -54,7 +72,17 @@ class MainActivity : AppCompatActivity() {
                 param(FirebaseAnalytics.Param.SUCCESS, "true")
             }
 
-            getRecipe("level_three")
+            getAndHandleRecipe("level_three")
+        }
+    }
+
+    fun getAndHandleRecipe(recipeId: String) {
+        when (val recipe = RatingRecipes.getRecipe("level_three")) {
+            is RatingRecipes.Recipe.InAppRating -> RatingRecipes.cook(this, recipe)
+            is RatingRecipes.Recipe.Sentiment -> RatingRecipes.cook(this, recipe)
+            is RatingRecipes.Recipe.None -> {
+                // Nothing to do
+            }
         }
     }
 }

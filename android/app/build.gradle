@@ -37,6 +37,8 @@ android {
 }
 
 dependencies {
+    implementation project(':ratingrecipes')
+
     implementation platform('com.google.firebase:firebase-bom:29.1.0')
     implementation 'com.google.firebase:firebase-analytics-ktx'
     implementation 'com.google.firebase:firebase-config-ktx'
