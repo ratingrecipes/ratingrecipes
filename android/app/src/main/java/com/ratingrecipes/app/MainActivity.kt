@@ -76,8 +76,8 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    fun getAndHandleRecipe(recipeId: String) {
-        when (val recipe = RatingRecipes.getRecipe("level_three")) {
+    private fun getAndHandleRecipe(recipeId: String) {
+        when (val recipe = RatingRecipes.getRecipe(recipeId)) {
             is RatingRecipes.Recipe.InAppRating -> RatingRecipes.cook(this, recipe)
             is RatingRecipes.Recipe.Sentiment -> RatingRecipes.cook(this, recipe)
             is RatingRecipes.Recipe.None -> {

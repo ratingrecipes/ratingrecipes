@@ -12,7 +12,7 @@ internal object IngredientsImpl {
     val RatingRecipes.Ingredients.enableInAppRating: Boolean
         get() = this.getBoolean("rr_enable_in_app_rating")
 
-    fun RatingRecipes.Ingredients.log(eventName: String) {
+    fun RatingRecipes.Ingredients.logEvent(eventName: String) {
         when (this) {
             is RatingRecipes.Ingredients.Firebase -> this.firebase.analytics.logEvent(
                 eventName,
