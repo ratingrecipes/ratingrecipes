@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="rr_sentiment_prompt_message">Are you enjoying the app?</string>
+    <string name="rr_sentiment_prompt_negative_text">No</string>
+    <string name="rr_sentiment_prompt_positive_text">Yes</string>
+</resources>
