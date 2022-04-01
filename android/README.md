@@ -10,7 +10,8 @@ This SDK allows you to optimize your rating quickly and without lots of code.
 
 For a 60 second demo of the SDK, [check out this Youtube video](https://youtu.be/AGSGmG1EZ-U).
 
-### Prepare
+### Add the SDK to your App
+#### Step 1: Prepare 
 Initialize the SDK. The current SDK uses Firebase ([setup Firebase](https://firebase.google.com/docs/android/setup) if you haven't),
 but more experimentation platforms are in the works.
 
@@ -31,7 +32,7 @@ but more experimentation platforms are in the works.
         }
     }
 
-### Fetch the Recipe and Cook
+#### Step 2: Fetch the Recipe and Cook
 Request recipes at places where you think your users are happiest.
 For example, after they complete a level in a game.
 
@@ -52,28 +53,35 @@ Rating Recipes intelligently tries to pick the best recipe for the user.
     }
 
 ### Configure Firebase
+#### Step 1: Add Remote Config values
 You will need to configure Firebase Remote Config with two values:
+
 `rr_recipe_id` - String - default value empty string - identify locations in the app that use the SDK
+
 `rr_enable_in_app_rating` - Boolean - default value false -  false shows sentiment prompt, true shows in-app rating
 
 <img width="791" alt="initial-config" src="https://user-images.githubusercontent.com/140911/161319896-31379c76-3b82-4ba3-9d6f-3c4f45e74a8f.png">
 
 https://user-images.githubusercontent.com/140911/161320810-d4494416-81e1-44c5-b6cd-cfdcd0327405.mov
 
-You can then take advantage of Firebase's [Remote Config Personalization](https://firebase.google.com/docs/remote-config/personalization) feature.
+#### Step 2: Sentiment prompt Personalization
+You can now take advantage of Firebase's [Remote Config Personalization](https://firebase.google.com/docs/remote-config/personalization) feature.
 This will automatically identify the best place for different users in your app to rate.
 
 We recommend showing the sentiment prompt to a small percentage of your users.
+
 But the exact value depends on your user base size and how easily users reach the rating locations.
+
 You can set the objective to the positive sentiment button click (`rr_sentiment_prompt_positive`).
 
 <img width="792" alt="sentiment-config" src="https://user-images.githubusercontent.com/140911/161320011-b51d4445-ed55-46fd-9e1b-cc29eb7c4c3c.png">
 
 https://user-images.githubusercontent.com/140911/161320769-c7a2804a-3ab6-4e9d-a6ef-9019bd01d5e7.mov
 
+#### Step 3: Switch to in-app rating
 You can then monitor the Remote Config Personalization results to see which locations are ideal.
-Once you feel Personalization has identified the happiest locations for users,
-you can now switch off the sentiment prompt and enable in-app rating.
+
+Once you feel Personalization has identified the happiest locations for users, you can now switch off the sentiment prompt and enable in-app rating.
 
 <img width="786" alt="final-config" src="https://user-images.githubusercontent.com/140911/161320003-dcdca2e3-c7e1-4662-9e9a-97e75a612ee2.png">
 
