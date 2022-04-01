@@ -6,9 +6,6 @@ import com.google.firebase.analytics.FirebaseAnalytics
 import com.google.firebase.analytics.ktx.analytics
 import com.google.firebase.analytics.ktx.logEvent
 import com.google.firebase.ktx.Firebase
-import com.google.firebase.remoteconfig.FirebaseRemoteConfig
-import com.google.firebase.remoteconfig.ktx.remoteConfig
-import com.google.firebase.remoteconfig.ktx.remoteConfigSettings
 import com.ratingrecipes.RatingRecipes
 import com.ratingrecipes.app.databinding.ActivityMainBinding
 
@@ -17,7 +14,6 @@ class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
 
     private lateinit var firebaseAnalytics: FirebaseAnalytics
-    private lateinit var firebaseRemoteConfig: FirebaseRemoteConfig
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -26,24 +22,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(view)
 
         firebaseAnalytics = Firebase.analytics
-
-        if (BuildConfig.DEBUG) {
-            firebaseRemoteConfig = Firebase.remoteConfig
-            val configSettings = remoteConfigSettings {
-                minimumFetchIntervalInSeconds = 5
-            }
-            firebaseRemoteConfig.setConfigSettingsAsync(configSettings)
-        }
-        firebaseRemoteConfig.fetchAndActivate()
-
-        RatingRecipes.debug = BuildConfig.DEBUG
-
-        RatingRecipes.prepare(
-            RatingRecipes.Ingredients.Firebase(
-                applicationContext = applicationContext,
-                firebase = Firebase
-            )
-        )
 
         binding.beatLevelOne.setOnClickListener {
             firebaseAnalytics.logEvent(FirebaseAnalytics.Event.LEVEL_END) {
