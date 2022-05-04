@@ -1,0 +1,11 @@
+@startuml
+
+title FanDuel Casino Rating Recipe\n[[https://ratingrecipes.com/apps/fanduelcasino]]
+
+start
+
+:App reports user data to Apptentive (see User Data in Analytics for complete list);
+:User logs in, withdrawals, deposits, sees a responsible time message, or exits the game;
+:Apptentive configured to determine if the user should see an in-app rating prompt;
+
+@enduml
