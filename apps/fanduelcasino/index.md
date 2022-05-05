@@ -30,7 +30,7 @@ Show a custom rating prompt after uploading 10 pins.
 ```
 Events:
 Login
-withdrawal
+Withdrawal
 Deposit
 Responsible time limit message displayed/exited
 Exit game
