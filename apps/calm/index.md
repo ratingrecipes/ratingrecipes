@@ -14,7 +14,7 @@ Calm
 
 **Recipe Type** Button Trigger
 
-**Rating Type** In-App Rating, Custom Prompt
+**Rating Type** In-App Rating, Custom Rating Prompt
 
 **Recipe Date** October 2021
 
