@@ -15,7 +15,7 @@ switch (Rate this app prompt)
         :Dismiss screen;
     end
     case (yes)
-        :Mark user as reviewing the app.
+        :Mark the user as left a review.
         Re-direct user to
         Google Play Epic
         page to review app;
