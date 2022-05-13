@@ -1,0 +1,25 @@
+@startuml
+
+title Epic App Rating Recipe\n[[https://ratingrecipes.com/apps/epic]]
+
+start
+
+:User finishes, favorites, or rates a book;
+: Does the user meet minimum criteria?
+# Never left a review previously
+# Read at least 5 books
+# Has not seen rate prompt for this version
+# Has not seen rate prompt today;
+switch (Rate this app prompt)
+    case (no)
+        :Dismiss screen;
+    end
+    case (yes)
+        :Mark user as reviewing the app.
+        Re-direct user to
+        Google Play Epic
+        page to review app;
+    end
+endswitch
+
+@enduml
