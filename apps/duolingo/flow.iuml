@@ -1,0 +1,26 @@
+@startuml
+
+title Duolingo App Rating Recipe\n[[https://ratingrecipes.com/apps/duolingo]]
+
+start
+
+:App receives an "anyNpsRating" event from backend;
+:More than 10 total app launches?
+# More than 10 launches since last prompt?
+# More than 5 days since first launch?
+# More than 7 days since last prompt?;
+switch (Rate this app prompt)
+    case (remind me later)
+        :Dismiss screen;
+    end
+    case (yes)
+        :User re-directed to
+        Google Play Duolingo
+        page to review app;
+    end
+    case (dismiss)
+        :Set don't show again variable;
+    end
+endswitch
+
+@enduml

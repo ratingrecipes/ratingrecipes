@@ -25,7 +25,7 @@ if (Is in-app rating enabled?) then (yes)
     endif
 else (no)
     :Custom prompt flow;
-        if (Do you live this\napp? prompt) then (yes)
+        if (Do you like this\napp? prompt) then (yes)
             switch (Rate this app prompt)
             case (later)
                 :Add 1 to # of
