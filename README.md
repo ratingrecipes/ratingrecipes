@@ -17,7 +17,7 @@ The goal of this space is to educate app teams on the most popular strategies to
 
 ### What skills do I need to analyze apps?
 
-* While you don't need to be a software developer to analyze Android apps, a working knowledge of Java is very helpful.
+* A strong working knowledge of Java and Android development is very helpful.
 * A machine with a high amount of RAM memory is also very useful.
 
 ### How do I set up my machine to analyze apps?
