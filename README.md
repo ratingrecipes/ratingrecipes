@@ -11,7 +11,7 @@ The goal of this space is to educate app teams on the most popular strategies to
 ### Which apps can I analyze?
 
 * While analysis of iOS apps is possible, we focus on Android apps since they are easier to analyze.
-* Apps that use the native [Google Play In-app Reviews API](https://developer.android.com/guide/playcore/in-app-review) are the easiest to analyze.
+* Apps that use the native [Google Play In-app Reviews API](https://developer.android.com/guide/playcore/in-app-review) are the easiest to analyze. Not all apps use the native rating prompt though.
 * Apps that use cross-platform technologies like React Native are harder to analyze.
 * Apps that are highly obfuscated take much longer to analyze (popular apps tend to be more obfuscated).
 
