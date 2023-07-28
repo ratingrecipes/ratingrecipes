@@ -38,11 +38,3 @@ Abbreviated instructions below:
 Yes, this approach works well for analyzing analytics, in-app subscriptions, and really any feature you can think of.
 
 However, we focus on ratings in this community repository.
-
-### Pick the next app
-
-If you would like to see an app that is not yet added, [open an issue](https://github.com/ratingrecipes/ratingrecipes/issues)!
-
-### Contributing
-
-If you would like to make an update, simply open [a new pull request](https://github.com/ratingrecipes/ratingrecipes/pulls) against the main branch.
