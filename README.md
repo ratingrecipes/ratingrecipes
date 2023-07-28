@@ -2,7 +2,7 @@
 
 ### Description
 
-This is the community repository for analysis of rating logic within apps.
+This is the [community repository for analysis of rating logic within apps](https://ratingrecipes.github.io/ratingrecipes/).
 
 The goal of this space is to educate app teams on the most popular strategies to request ratings and reviews.
 
