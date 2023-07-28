@@ -15,7 +15,7 @@ The goal of this space is to educate app teams on the most popular strategies to
 * Apps that use cross-platform technologies like React Native are harder to analyze.
 * Apps that are highly obfuscated take much longer to analyze (popular apps tend to be more obfuscated).
 
-### What skills do I need to analyze apps?
+### What do I need to analyze apps?
 
 * A strong working knowledge of Java and Android development is very helpful.
 * A machine with a high amount of RAM memory is also very useful.
