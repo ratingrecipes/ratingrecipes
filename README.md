@@ -31,6 +31,7 @@ Abbreviated instructions below on how to configure your environment to analyze a
 1. Optional: modify Jadx Preferences -> Decompilation -> Excluded packages `android.accounts android.support android.arch androidx appnav dagger fr io javax kotlin bolts net okhttp3 okio org retrofit2 lib.android.paypal siftscience.android kotlinx com.airbnb com.adjust.sdk com.amplitude.api com.android.installreferrer com.braintreepayments.api com.bumptech.glide com.facebook.shimmer com.getbouncer com.github com.ibm.icu com.iterable.iterableapi com.newrelic com.nimbusds com.salesforce.android com.segment.analytics.android com.sendbird com.sift.api com.squareup com.stripe.android com.uber.rxdogtag com.ults.listeners com.verygoodsecurity.vgscollect com.withpersona.sdk com.google`
 1. Download the APK of the app you'd like to analyze (e.g., google search "[App Name] APK") and open in jadx-gui. Note: if the file is .xapk, rename to .zip and open to find the actual .apk.
 1. Search for `ReviewInfo` within jadx to find the native in-app rating prompt.
+1. Alternatively, search for `market://details?id=` and `http://play.google.com/store/apps/details` to find where the app may launch the store listing.
 1. Have fun exploring the app!
 
 ### Can I analyze more than rating strategies?
